@@ -197,5 +197,28 @@ body {
 .card-body h4 {
   font-weight: bold;
 }
+.drawer-title {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+.drawer-header {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn2 {
+  color: black;
+  background-color: red;
+  fill: black;
+}
+.drawer-body {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+.btn-icon {
+  color: white;
+}
 
 

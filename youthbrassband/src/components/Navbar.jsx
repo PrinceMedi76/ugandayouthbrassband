@@ -15,7 +15,7 @@ const Navbar = () => {
     <dialog class="drawer drawer-end" tabindex="-1" id="navbarNav" aria-labelledby="navbarNavLabel">
       <div class="drawer-header">
         <h5 class="drawer-title" id="navbarNavLabel">Menu</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+        <button type="button" class="btn2 btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
       </div>
       <div class="drawer-body d-flex flex-row-reverse">
         <ul class="navbar-nav fs-lg gap-10 bg-warning f">
