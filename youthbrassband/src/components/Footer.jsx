@@ -13,7 +13,7 @@ const Footer = () => {
             <div className='row gap-2 col-12 col-lg-4'>
                 <div className='footer-card relative col-12 col-lg-4' style={{maxWidth: "320px"}}>
                    <div className='card-logo'>
-                    <img src="./src/assets/newlogo.png" class="card" alt="..."/>
+                    <img src="./images/newlogo.png" class="card" alt="..."/>
                    </div>
                     <div className='card-logo-links'>
                         <ul className='flex gap-5'>
@@ -50,7 +50,7 @@ const Footer = () => {
                 <div class="footer-card col-12 col-lg-4" style={{maxWidth: "320px"}}>
                     <div class="card-body">
                         <h4 class="card-title">PARTNERS</h4>
-                        <img class='card-p-logo' src='./src/assets/Sounds.jpg' alt='...'/>
+                        <img class='card-p-logo' src='./images/Sounds.jpg' alt='...'/>
                         <p class="card-subtitle fg-3">Sounds Of Brass Radio<br/>UK - SME Awards Winner 2026</p>
                         <a href="http://www.sounds-of-brass.co.uk/">Partner Website</a>
                         <button type="button" class="btn"><a href="https://www.sounds-of-brass.co.uk/african-youth-band-partner">Donate ❤️</a></button>
