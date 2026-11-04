@@ -20,12 +20,12 @@ const Navbar = () => {
       <div class="drawer-body d-flex flex-row-reverse">
         <ul class="navbar-nav fs-lg gap-10 bg-warning f">
           <li class="nav-item hover-lift">
-            <Link to='/'>
+            <Link to='/home'>
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </Link>
           </li>
           <li class="nav-item hover-lift">
-            <Link to=''>
+            <Link to='/about'>
               <a class="nav-link" href="#">About</a>
             </Link>
           </li>
