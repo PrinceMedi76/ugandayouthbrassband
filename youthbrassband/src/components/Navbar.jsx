@@ -4,8 +4,8 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <div>
-        <nav class="navbar sm:navbar-expand bg-black fg-2">
-  <div class="container-fluid">
+        <nav class="navbar sm:navbar-expand bg-black fg-2 sticky top-0">
+  <div class="container-fluid sticky top-0">
     <a class="navbar-brand" href="#">
         <img src='./images/newlogo.png' alt="Logo" />
     </a>
@@ -20,7 +20,7 @@ const Navbar = () => {
       <div class="drawer-body d-flex flex-row-reverse">
         <ul class="navbar-nav fs-lg gap-10 bg-warning f">
           <li class="nav-item hover-lift">
-            <Link to='/home'>
+            <Link to='/'>
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </Link>
           </li>

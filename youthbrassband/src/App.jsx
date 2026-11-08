@@ -12,7 +12,7 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path='/home' element={
+        <Route path='/' element={
           <>
             <Donate />
             <Home />
