@@ -9,7 +9,7 @@ import { MdMarkEmailUnread } from "react-icons/md";
 const Footer = () => {
   return (
     <footer className='container footer max-h-full max-w-full justify-between bg-black p-10'>
-        <div className='container-fluid flex gap-2 col-12 col-lg-4'>
+        <div className='container-fluid flex  col-12 col-lg-4'>
             <div className='row gap-2 col-12 col-lg-4'>
                 <div className='footer-card relative col-12 col-lg-4' style={{maxWidth: "320px"}}>
                    <div className='card-logo'>
@@ -38,7 +38,7 @@ const Footer = () => {
                         </ul>
                     </div>
                 </div>
-                <div class="footer-cardcol-12 col-lg-4" style={{maxWidth: "320px"}}>
+                <div class="footer-card col-12 col-lg-4" style={{maxWidth: "320px"}}>
                     <div class="card-body">
                         <h4 class="card-title">CONTACTS</h4>
                         <p class="card-text">P.O. BOX 214788 Kampala - Uganda</p>

@@ -3,8 +3,9 @@ import React from 'react'
 const About = () => {
   return (
     <>
-        <div className="container">
-            <div className='about-head flex'>
+        <div className='about'>
+            <div className="container">
+            <div className='about-head'>
                 <div className="card">
                     <div className="card-body">
                         <img src="/images/DIR DENNIS WASSWA.jpg" className="card-img" alt="..." />
@@ -75,6 +76,28 @@ const About = () => {
                 </div>
             </div>
     </div>
+    <div className='container'>
+        <div className='about-avatar'>
+            <span>
+              <img className="avatar-img" src="/images/Sounds.jpg" alt="mdo"/>
+              <h className='font-semibold flex justify-center'>DENNIS WASSWA</h>
+            </span>
+            <span>
+              <img className="avatar-img" src="/images/logo.jpg" alt="mdo"/>
+              <h className='font-semibold flex justify-center'>DENNIS WASSWA</h>
+            </span>
+            <span>
+              <img className="avatar-img" src="/images/DIR DENNIS WASSWA.jpg" alt="mdo"/>
+              <h className='font-semibold flex justify-center'>DENNIS WASSWA</h>
+            </span>
+            <span>
+              <img className="avatar-img" src="/images/DIR DENNIS WASSWA.jpg" alt="mdo"/>
+              <h className='font-semibold flex justify-center'>DENNIS WASSWA</h>
+            </span>
+        </div>
+
+    </div>
+        </div>
     </>
   )
 }

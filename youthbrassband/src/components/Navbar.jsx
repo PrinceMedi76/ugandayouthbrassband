@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 
 const Navbar = () => {
   return (
-    <div>
-        <nav class="navbar sm:navbar-expand bg-black fg-2 sticky top-0">
+    <div className='navme'>
+        <nav class="navbar sm:navbar-expand bg-black fg-2 ">
   <div class="container-fluid sticky top-0">
     <a class="navbar-brand" href="#">
         <img src='./images/newlogo.png' alt="Logo" />

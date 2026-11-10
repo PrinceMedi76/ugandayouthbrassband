@@ -40,7 +40,11 @@
       rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
   }
 }
-
+.navme {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
 body {
   margin: 0;
   padding: 0;
@@ -154,9 +158,8 @@ body {
 }
 .footer {
   width: 100%;
-  padding: 7px;
+  padding: 10px;
   color: white;
-  overflow: hidden;
 }
 .card-logo img{
   width: 120px;
@@ -216,33 +219,6 @@ body {
 .btn-icon {
   color: white;
 }
-@media (max-width: 768px) {
-  .about-head {
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-    margin-left: 0;
-    padding: 0;
-    width: 100%;
-  }
-  .about-head .card {
-    width: 100%;
-    display: block;
-  }
-  .home-images {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: center;
-  }
-  .about-c1{
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    justify-content: center;
-    
-  }
-}
 .about-c1 {
   padding: 20px;
   margin-left: 50px;
@@ -254,7 +230,7 @@ body {
   gap: 60px;
   width: 100%;
   padding: 20px;
-  margin: 20px;
+  margin: 20px auto;
   margin-left: 90px;
   background-color: white;
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3), 2px 2px 4px rgba(0, 0, 0, 0.6);
@@ -263,7 +239,7 @@ body {
 .card-body {
   margin-left: 5px;
   display: flex;
-  gap: 40px;
+  gap: 20px;
 }
 .card-body h5 {
   font-weight: bold;
@@ -299,5 +275,52 @@ body {
 .pra-text {
   font-weight: 300;
   color: black ;
+}
+.about-avatar {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 5px 15px 50px;
+  padding: 10px;
+}
+.avatar-img {
+  width: 200px;
+  height: 180px;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .about-avatar {
+    grid-template-columns: 1fr;
+    gap: 5px;
+    align-items: center;
+  }
+  .about-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 90%;
+    justify-content: center;
+    margin: 20px auto;
+    text-align: center;
+  }
+  .about-head .card {
+    width: 100%;
+    margin: 0;
+  }
+  .home-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+  .about-c1{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    
+  }
 }
 
