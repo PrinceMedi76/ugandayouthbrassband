@@ -1,16 +1,16 @@
-import Navbar from './components/Navbar'
+
 import Donate from './components/Donate'
 import Footer from './components/Footer'
 import { Route, Routes}  from 'react-router-dom'
 import About from './components/About'
 import Home from './components/Home'
+import ContactUs from './components/ContactUs'
 
 function App() {
   
 
   return (
     <>
-      <Navbar />
       <Routes>
         <Route path='/' element={
           <>
@@ -19,6 +19,7 @@ function App() {
           </>
         } />
         <Route path='/about' element={<About />} />
+        <Route path='/contactus' element={<ContactUs />} />
       </Routes>
       <Footer />
     </>

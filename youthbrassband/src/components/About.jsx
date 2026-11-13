@@ -1,9 +1,10 @@
-
+import Navbar from "../components/Navbar"
 
 const About = () => {
   return (
     <>
         <div className='about'>
+            <Navbar/>
             <div className="container">
             <div className='about-head'>
                 <div className="card">
@@ -62,11 +63,11 @@ const About = () => {
         </div>
     <div>
         <div className='container'>
-                <div className='about-c1 flex gap-50'>
+                <div className='about-c1 gap-50'>
                     <div className='card'>
                         <img src="/images/newlogo.png" class="img-fluid d-block w-50 h-70 rounded-5" alt="..."></img>
                     </div>
-                    <div className='card'>
+                    <div className='about-card'>
                         <p className='card-subtittle w-90 text-xl flex center font-s tracking-wide font-stretch-50%'>
                             Uganda Youth Brass Band we teach children in schools across Wakiso District
                             how to play

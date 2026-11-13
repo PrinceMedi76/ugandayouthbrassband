@@ -1,11 +1,9 @@
-import React from 'react'
+import Navbar from "../components/Navbar"
 
 const Donate = () => {
   return (
     <div className='container donate'>
-      <div className='container button'>
-        <button type="button" className="donate-btn">Donate 🤍</button>
-      </div>
+      <Navbar/>
         <div class='container donate-welcome'>
             <h1 className='text-black bg-white'>Welcome to </h1><br/>
             <h2 className='text-yellow-500'>Uganda Youth</h2>
