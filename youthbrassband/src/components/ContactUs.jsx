@@ -101,9 +101,9 @@ const ContactUs = () => {
                   <div class="form-text text-amber-100">
                     Be sure to include relevant details.
                   </div>
-                  <button class="btn-solid theme-primary justify-self-start" type="submit" id="btn-submit">Submit</button>
                   <ReCAPTCHA sitekey="6LcxaR8uAAAAAHoNjQ7LRJshrTlynxks7TX4t-qW"
                   onChange={(value)=> setCaptcha(value)}/>
+                  <button class="btn-solid theme-primary justify-self-start" type="submit" id="btn-submit">Submit</button>
               </form>
             </div>
           </section>
