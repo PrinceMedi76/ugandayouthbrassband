@@ -8,8 +8,20 @@ import { IoLogoTiktok } from "react-icons/io5";
 import { FaFacebookF } from "react-icons/fa";
 import { ImYoutube2 } from "react-icons/im";
 import Navbar from '../components/Navbar'
+import {ReCAPTCHA} from 'react-google-recaptcha'
+import { useState} from 'react'
 
 const ContactUs = () => {
+  const [captcha,setCaptcha] = useState(null)
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if(!captcha){
+      alert("Please verify your not Robot")
+      return;
+    }
+  }
+
   return (
    <div className="contactus">
     <Navbar/>
@@ -76,7 +88,7 @@ const ContactUs = () => {
               <p>Let us know your questions, suggestions and concerns by 
                 filling out the contact form below.
               </p>
-              <div className="form-field">
+              <form onSubmit={handleSubmit} className="form-field">
                 <label for="fieldText" class="form-label">Name</label>
                 <input type="text" required class="form-control" id="fieldText" placeholder="Enter your name here"/>
                 <label for="fieldText" class="form-label">Email address</label>
@@ -90,7 +102,9 @@ const ContactUs = () => {
                     Be sure to include relevant details.
                   </div>
                   <button class="btn-solid theme-primary justify-self-start" type="submit" id="btn-submit">Submit</button>
-              </div>
+                  <ReCAPTCHA sitekey="6LcxaR8uAAAAAHoNjQ7LRJshrTlynxks7TX4t-qW"
+                  onChange={(value)=> setCaptcha(value)}/>
+              </form>
             </div>
           </section>
         </div>

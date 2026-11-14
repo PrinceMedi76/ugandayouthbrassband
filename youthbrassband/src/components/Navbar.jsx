@@ -30,7 +30,7 @@ const Navbar = () => {
         <button type="button" class="btn2 btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
       </div>
       <div class="drawer-body d-flex flex-row-reverse">
-        <ul class={`navbar-nav fs-lg gap-10 ${scrolled?"fill-gray-950 font-semibold":"text-black"}`}>
+        <ul class={`navbar-nav fs-lg gap-10 ${scrolled?"fill-gray-950 font-semibold":"text-white"}`}>
           <li class="nav-item hover-lift">
             <Link to='/'>
               <a class="nav-link active" aria-current="page" href="#">Home</a>
