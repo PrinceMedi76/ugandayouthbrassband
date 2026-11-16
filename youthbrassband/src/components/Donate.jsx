@@ -1,9 +1,14 @@
 import Navbar from "../components/Navbar"
+import {motion} from "motion/react"
 
 const Donate = () => {
   return (
-    <div className='container donate'>
-      <Navbar/>
+    <motion.div 
+    initial={{opacity:0, y:50}}
+        whileInView={{opacity:1, y:0}}
+        transition={{duration:0.6}}>
+      <div className='container donate'>
+      <Navbar />
         <div class='container donate-welcome'>
             <h1 className='text-black bg-white'>Welcome to </h1><br/>
             <h2 className='text-yellow-500'>Uganda Youth</h2>
@@ -21,6 +26,7 @@ const Donate = () => {
             </div>
         </div>
     </div>
+    </motion.div>
   )
 }
 

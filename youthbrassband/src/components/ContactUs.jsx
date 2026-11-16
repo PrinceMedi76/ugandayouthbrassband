@@ -10,6 +10,7 @@ import { ImYoutube2 } from "react-icons/im";
 import Navbar from '../components/Navbar'
 import {ReCAPTCHA} from 'react-google-recaptcha'
 import { useState} from 'react'
+import {motion} from 'motion/react'
 
 const ContactUs = () => {
   const [captcha,setCaptcha] = useState(null)
@@ -23,7 +24,11 @@ const ContactUs = () => {
   }
 
   return (
-   <div className="contactus">
+   <motion.div
+      initial={{opacity:0, y:50}}
+      whileInView={{opacity:1, y:0}}
+      transition={{duration:0.6}}>
+    <div className="contactus">
     <Navbar/>
      <section className="aboutus">
       <div className="container">
@@ -32,7 +37,7 @@ const ContactUs = () => {
         <h3>Reach out to us through any of our channel. We're always here to<br/>
         answer your questions, hear your ideas, and work together to <br/>
         change childrens lives and skills through your <span className="text-red-500 font-semibold">Donate ❤️</span></h3>
-        <div className="cards">
+          <div className="cards">
           <div className="card loc">
             <div  className="icon-circle location">
               <FaLocationDot size={35} color="red"/>
@@ -111,6 +116,7 @@ const ContactUs = () => {
       </div>
     </section>
    </div>
+   </motion.div>
   )
 }
 

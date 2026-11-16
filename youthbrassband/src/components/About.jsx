@@ -1,9 +1,14 @@
 import Navbar from "../components/Navbar"
+import {motion} from "motion/react"
 
 const About = () => {
   return (
     <>
-        <div className='about'>
+        <motion.div 
+        initial={{opacity:0, y:50}}
+        animate={{opacity:1, y:0}}
+        transition={{duration:0.6}}>
+            <div className='about'>
             <Navbar/>
             <div className="container">
             <div className='about-head'>
@@ -62,7 +67,12 @@ const About = () => {
             </div>
         </div>
     <div>
-        <div className='container'>
+        <section>
+            <motion.div
+            initial={{opacity:0, y:50}}
+      whileInView={{opacity:1, y:0}}
+      transition={{duration:0.6}}>
+                <div className='container'>
                 <div className='about-c1 gap-50'>
                     <div className='card'>
                         <img src="/images/newlogo.png" class="img-fluid d-block w-50 h-70 rounded-5" alt="..."></img>
@@ -76,8 +86,15 @@ const About = () => {
                     </div>
                 </div>
             </div>
+            </motion.div>
+        </section>
     </div>
-    <div className='container'>
+    <section>
+        <motion.div
+        initial={{opacity:0, y:50}}
+      whileInView={{opacity:1, y:0}}
+      transition={{duration:0.6}}>
+            <div className='container'>
         <div className='about-avatar'>
             <span>
               <img className="avatar-img" src="/images/Sounds.jpg" alt="mdo"/>
@@ -96,9 +113,11 @@ const About = () => {
               <h className='font-semibold flex justify-center'>DENNIS WASSWA</h>
             </span>
         </div>
-
     </div>
+        </motion.div>
+    </section>
         </div>
+        </motion.div>
     </>
   )
 }

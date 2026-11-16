@@ -5,10 +5,15 @@ import { GrInstagram } from "react-icons/gr";
 import { FaTiktok } from "react-icons/fa6";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdMarkEmailUnread } from "react-icons/md";
+import {motion} from "motion/react"
 
 const Footer = () => {
   return (
-    <footer className='container footer max-h-full max-w-full justify-between bg-black p-10'>
+    <motion.div 
+        initial={{opacity:0, y:50}}
+        whileInView={{opacity:1, y:0}}
+        transition={{duration:0.6}}>
+        <footer className='container footer max-h-full max-w-full justify-between bg-gray-800 p-10'>
         <div className='container-fluid flex  col-12 col-lg-4'>
             <div className='row gap-2 col-12 col-lg-4'>
                 <div className='footer-card relative col-12 col-lg-4' style={{maxWidth: "320px"}}>
@@ -77,6 +82,7 @@ const Footer = () => {
         <p>Privacy Policy | Terms And Conditions</p>
       </div>
     </footer>
+    </motion.div>
   )
 }
 
