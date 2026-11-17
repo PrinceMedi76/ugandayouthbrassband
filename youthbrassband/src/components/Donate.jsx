@@ -7,25 +7,13 @@ const Donate = () => {
     initial={{opacity:0, y:50}}
         whileInView={{opacity:1, y:0}}
         transition={{duration:0.6}}>
-      <div className='container donate'>
-      <Navbar />
-        <div class='container donate-welcome'>
-            <h1 className='text-black bg-white'>Welcome to </h1><br/>
-            <h2 className='text-yellow-500'>Uganda Youth</h2>
-            <h3 className='text-red-500'>Brass Band</h3>
-        </div>
-        <div className='container'>
-          <h class='center'>Community Based Organization - CBO - Wakiso District</h>
-        </div>
-        <div className='donate-up'>
-            <div>
-              <h class='fg-success fw-bold'>Our Vision : <span class='fg-white fw-lighter'>To be the leading youth brass band organization in Uganda nurturing talent for global stages.</span></h>
-            </div>
-            <div>
-              <h class='fg-success fw-bold'>Our Mission : <span class='fg-white fw-lighter'>To empower youth through music education, life skills, and community services</span></h>
-            </div>
-        </div>
-    </div>
+      <div className="homepage">
+        <Navbar />
+         <section className='container welcome'>
+            <h1 className="text-red-600"><span className="text-white">Welcome to</span> Uganda</h1>
+            <h3 className="text-red-600">Youth Brass Band</h3>
+          </section>
+      </div>
     </motion.div>
   )
 }

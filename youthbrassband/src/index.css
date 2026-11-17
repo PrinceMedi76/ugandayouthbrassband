@@ -40,25 +40,33 @@
       rgba(0, 0, 0, 0.4) 0 10px 15px -3px, rgba(0, 0, 0, 0.25) 0 4px 6px -2px;
   }
 }
-.navme {
-  position: sticky;
-  top: 0;
-  width: 100%;
-
-}
 body {
   margin: 0;
   padding: 0;
-  background-color: rgb(220, 215, 215);
+  background-color: white;
+}
+.photo {
+  padding: 10px;
+}
+.navme {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  z-index: 1030;
+  transition: background-color 0.2s ease;
 }
 .navbar {
+  position: relative;
+  left: 0;
   width: 100%;
   padding: 0;
   display: flex;
-  height: max-content;
+  height: 15vh;
   justify-content: space-between;
-  border-bottom:2px solid black;
-  margin-bottom: 10px;
+  z-index: 1030;
+  margin-top: 0;
 }
 .navbar-brand img {
   max-width: 100px;
@@ -76,59 +84,47 @@ body {
   text-decoration: none;
   font-weight: 400;
   justify-content: center;
-  margin-right: 40px;
+  margin-right: 23px;
+  margin-top: 0;
 }
 .nav-link {
   white-space: nowrap;
 }
-.vandm{
-  position: absolute;
-  bottom: 10px;
-  margin-left: 20px;
-  margin-top: 10px;
-  font-size: 15px;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  font-size: 24px;
-}
-.donate {
-  display:block;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  padding: 15px;
-  margin-bottom: 10px;
-  max-width: 100%;
+.homepage {
+  padding-top: 30vh;
+  z-index: 1000;
+  width: 100%;
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,.5)),url('/images/img4.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,.55)),url('/images/img6.JPG');
   background-position: center;
+  background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-bottom: 20px;
+}
+.welcome {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-weight:400;
+  font-size: 80px;
+  font-style: italic;
+  letter-spacing: -0.1rem;
 }
 .donate-btn {
   position: absolute;
-  top: -40px;
+  top: -30px;
   right: -120px;
   color: black;
   font-weight: 400;
   background-color: red;
   padding: 3px;
   width: 120px;
-  height: 95px;
+  height: 86px;
   font-weight: 400;
   font-size: 18px;
-  border-radius: 10px;
-}
-.donate-welcome {
-  display: flex;
-  flex-direction:column;
-  justify-content:start;
-  margin-left: 20px;
+  border-radius: 9px;
 }
 .donate-up {
   display: flex;
@@ -136,30 +132,6 @@ body {
   gap: 10px;
   font-size: clamp(15px, 2vw, 25px);
   padding-top: 40px;
-}
-.donate-welcome h1{
-  font-size: 45px;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  padding: 7px;
-  border-radius: 15px;
-  width: fit-content;
-}
-.donate-welcome h2{
-  margin-left: 60px;
-  display: flex;
-  justify-content: last baseline;
-  font-size: 50px;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-}
-.donate-welcome h3{
-  margin-left: 120px;
-  display: flex;
-  justify-content:last baseline;
-  font-size: 50px;
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
 }
 .footer-copyright {
   margin-top: 40px;
@@ -260,7 +232,6 @@ body {
 }
 .about {
   padding: 15px;
-  margin-bottom: 10px;
   max-width: 100%;
   min-height: 90vh;
   background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,.5)),url('/images/logo.jpg');
@@ -268,14 +239,15 @@ body {
 .about-head {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 60px;
   width: 100%;
   padding: 20px;
-  margin: 20px auto;
   margin-left: 90px;
   background-color: white;
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3), 2px 2px 4px rgba(0, 0, 0, 0.6);
   border-radius: 15px;
+  margin-top: 80px;
 }
 .card-body {
   margin-left: 5px;
@@ -304,11 +276,19 @@ body {
   width: 100%;
   height: 70vh;
 }
-.home {
+.vision {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  text-align: center;
+  padding: 10px;
+  margin-top: 20px;
+  gap: 40px;
+}
+.home {
+  padding: 20px;
+  justify-content: center;
+  text-align: start;
+  align-items: center;
 }
 .home-images {
   padding: 20px;
@@ -543,6 +523,12 @@ body {
   background: rgb(238, 210, 201);
 }
 @media (max-width: 991px) {
+  .home {
+    width: 100%;
+  }
+  .vision {
+    flex-direction: column;
+  }
   .navbar {
     width: 100%;
   }

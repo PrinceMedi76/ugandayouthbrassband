@@ -9,8 +9,8 @@ const About = () => {
         animate={{opacity:1, y:0}}
         transition={{duration:0.6}}>
             <div className='about'>
-            <Navbar/>
             <div className="container">
+                <Navbar/>
             <div className='about-head'>
                 <div className="card">
                     <div className="card-body">
