@@ -1,5 +1,6 @@
 @import "tailwindcss";
-@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&family=Story+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap');
 :root {
   --bg: #fff;
   --border: #e5e4e7;
@@ -91,7 +92,7 @@ body {
   white-space: nowrap;
 }
 .homepage {
-  padding-top: 30vh;
+  padding-top: 37vh;
   z-index: 1000;
   width: 100%;
   min-height: 100vh;
@@ -108,9 +109,27 @@ body {
   align-items: center;
   text-align: center;
   font-weight:400;
-  font-size: 80px;
-  font-style: italic;
-  letter-spacing: -0.1rem;
+  font-size: 60px;
+  font-family: Storytella, sans-serif;
+  letter-spacing: 0.05rem;
+  color: #ed1923;
+}
+.com{
+  font-family: "Quicksand";
+  color: rgb(14, 14, 14);
+  font-style:oblique;
+}
+.welcome-h3 {
+    font-family: "Courgette", cursive;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+.welcome-span {
+  font-family: "Quicksand";
+  font-optical-sizing: auto;
+  color: white;
+  font-weight:600;
+  font-size: 70px;
 }
 .donate-btn {
   position: absolute;
@@ -143,11 +162,16 @@ body {
 
 }
 .about-card {
-  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+  height: 80vh;
+  padding: 5px;
   text-align: center;
-  width: 400px;
-  background-color: white;
+  width: 500px;
   border-radius: 15px;
+  color: rgb(200, 197, 197);
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3), 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 .card-logo img{
@@ -223,12 +247,12 @@ body {
 }
 .about-c1 {
   display: flex;
-  justify-content:space-between;
+  justify-content:center;
   align-items: center;
   text-align: center;
-  gap: 50px;
+  gap: 100px;
   padding: 10px;
-  margin-left: 80px;
+  margin-top: 20px;
 }
 .about {
   padding: 15px;
@@ -522,7 +546,71 @@ body {
 .share {
   background: rgb(238, 210, 201);
 }
+.news-stories {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+  max-width: 100%;
+  min-height: 90vh;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,.5)),url('/images/logo.jpg');
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+.dropdown-menu {
+  position: absolute;
+  top: 35px;
+  min-width: 150px;
+  background:blueviolet;
+  color: white;
+  padding: 10px 0;
+  margin: 0;
+  list-style: none;
+  display: none;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-5px);
+  transition: all .2rem ease;
+}
+.gallery {
+  display: flex;
+  justify-content:flex-start;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  height: 100vh;
+  margin: 0;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,.5)),url('/images/logo.jpg');;
+}
+.gallery .welcome {
+  margin-top: 50px;
+}
+.images{
+  display: grid;
+  justify-content: center;
+  padding: 30px;
+  gap: 20px;
+  background-color: lightslategray;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+
+
 @media (max-width: 991px) {
+  .images {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
   .home {
     width: 100%;
   }

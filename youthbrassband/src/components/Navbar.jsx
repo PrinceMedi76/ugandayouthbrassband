@@ -41,13 +41,16 @@ const Navbar = () => {
               <a class="nav-link" href="#">About</a>
             </Link>
           </li>
-          <li class="nav-item hover-lift">
-            <Link to=''>
-              <a class="nav-link" href="#">Media & Press</a>
-            </Link>
+          <li class="nav-item hover-lift dropdown">
+            <a class="nav-link" href="#">Media & Press</a>
+            <ul className="dropdown-menu">
+              <Link to=''><li><a href="">Media</a></li></Link>
+              <Link to=''><li><a href=""></a>Reels</li></Link>
+              <Link to='gallery'><li><a href="#">Gallery</a></li></Link>
+            </ul>
           </li>
            <li class="nav-item hover-lift">
-            <Link to=''>
+            <Link to='/newstories'>
               <a class="nav-link" href="#">News & Stories</a>
             </Link>
           </li>

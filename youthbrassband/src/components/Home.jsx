@@ -2,11 +2,11 @@ import {motion } from "motion/react"
 
 const Home = () => {
   return (
-    <motion.div 
+      <div className="home">
+        <motion.div 
     initial={{opacity:0, y:50}}
       whileInView={{opacity:1, y:0}}
       transition={{duration:0.6}}>
-      <div className="home">
         <div className="container vision">
             <div>
               <h className='fill-gray-700 fw-bold text-3xl'>Uganda Youth Brass Band is a community Based Organization - CBO - Wakiso District</h><br/>
@@ -19,6 +19,11 @@ const Home = () => {
               <img src="/images/logo.jpg" className="img-thumbnail h-90 w-90" alt="..."></img>
             </div>
         </div>
+      </motion.div>
+        <motion.div 
+    initial={{opacity:0, y:50}}
+      whileInView={{opacity:1, y:0}}
+      transition={{duration:0.6}}>
         <div className='container'>
           <div className='home-images flex flex-direction-row gap-50'>
             <div>
@@ -30,8 +35,8 @@ const Home = () => {
             </div>
           </div>
         </div>
+      </motion.div>
     </div>
-    </motion.div>
   )
 }
 

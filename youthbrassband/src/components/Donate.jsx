@@ -10,8 +10,8 @@ const Donate = () => {
       <div className="homepage">
         <Navbar />
          <section className='container welcome'>
-            <h1 className="text-red-600"><span className="text-white">Welcome to</span> Uganda</h1>
-            <h3 className="text-red-600">Youth Brass Band</h3>
+            <h1 className="welcome-h3"><span className="welcome-span">Welcome to</span> Uganda</h1>
+            <h3 className="welcome-h3">Youth Brass Band</h3>
           </section>
       </div>
     </motion.div>

@@ -75,10 +75,10 @@ const About = () => {
                 <div className='container'>
                 <div className='about-c1 gap-50'>
                     <div className='card'>
-                        <img src="/images/newlogo.png" class="img-fluid d-block w-50 h-70 rounded-5" alt="..."></img>
+                        <img src="/images/newlogo.png" class="img-fluid w-80 h-60" alt="..."></img>
                     </div>
                     <div className='about-card'>
-                        <p className='card-subtittle w-90 text-xl flex center font-s tracking-wide font-stretch-50%'>
+                        <p className='card-subtittle w-90 text-3xl flex center  tracking-wide font-stretch-50%'>
                             Uganda Youth Brass Band we teach children in schools across Wakiso District
                             how to play
                             trumpets, trombones, drums and Music reading. We provide trainers, instruments and training ground.

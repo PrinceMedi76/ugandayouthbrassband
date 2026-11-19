@@ -32,8 +32,8 @@ const ContactUs = () => {
     <Navbar/>
      <section className="aboutus">
       <div className="container">
-        <h1>Let's talk</h1>
-        <h2>Connect With Us <span className="text-red-500">Lets Make <br/>a Change</span></h2>
+        <h1 className="com">Let's talk</h1>
+        <h2>Connect With Us <span className="text-red-300">Lets Make <br/>a Change</span></h2>
         <h3>Reach out to us through any of our channel. We're always here to<br/>
         answer your questions, hear your ideas, and work together to <br/>
         change childrens lives and skills through your <span className="text-red-500 font-semibold">Donate ❤️</span></h3>
