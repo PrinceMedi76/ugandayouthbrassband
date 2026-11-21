@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Permanent+Marker&family=Quicksand:wght@300..700&family=Story+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&family=Story+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Dancing+Script:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&display=swap');
 :root {
@@ -102,6 +103,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   padding-bottom: 20px;
+  backdrop-filter: green;
 }
 .welcome {
   display: block;
@@ -123,6 +125,7 @@ body {
     font-family: "Courgette", cursive;
     font-weight: bold;
     letter-spacing: 0.1rem;
+    font-size: 70px;
 }
 .welcome-span {
   font-family: "Quicksand";
@@ -165,13 +168,17 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 15px;
+  font-size: 10px;
+  background-color: lab(98.59% -0.17 0.47);
   height: 80vh;
   padding: 5px;
-  text-align: center;
+  text-align:start;
   width: 500px;
   border-radius: 15px;
-  color: rgb(200, 197, 197);
+  font-family: "Courgette", cursive;
+  font-weight: 400;
+  font-style: normal;
+  color: black;
   box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3), 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 .card-logo img{
@@ -189,16 +196,25 @@ body {
   text-decoration: underline;
 }
 .btn {
-  background-color: red;
+  background-color: transparent;
+  border: 1px solid red;
   border-radius: 10px;
   margin-bottom: 5px;
   margin: 5px;
   width:210px;
+  box-shadow: 0 6px 14px rgba(12, 238, 24, 0.15);
 }
 .btn a {
-  color: black;
+  color: red;
   font-weight: 500;
   text-decoration: none;
+}
+.btn a:hover {
+  color: white;
+}
+.btn:hover {
+  background-color: rgb(124, 15, 15);
+  color: white;
 }
 .card-p-logo {
   width: 40px;
@@ -243,7 +259,10 @@ body {
 .contactus {
   padding: 15px;
   width: 100%;
-  background-color: gray;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: url("/images/contacts.jpg");
 }
 .about-c1 {
   display: flex;
@@ -258,20 +277,23 @@ body {
   padding: 15px;
   max-width: 100%;
   min-height: 90vh;
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,.5)),url('/images/logo.jpg');
+  background-position: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,.5)),url('/images/image6.JPG');
 }
 .about-head {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content:start;
   gap: 60px;
   width: 100%;
   padding: 20px;
-  margin-left: 90px;
+  margin-left: 30px;
   background-color: white;
-  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.3), 2px 2px 4px rgba(0, 0, 0, 0.6);
+  box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.15), 2px 2px 4px rgba(0, 0, 0, 0.6);
   border-radius: 15px;
-  margin-top: 80px;
+  margin-top: 130px;
 }
 .card-body {
   margin-left: 5px;
@@ -303,10 +325,16 @@ body {
 .vision {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   padding: 10px;
   margin-top: 20px;
-  gap: 40px;
+  gap: 50px;
+}
+.vision h1 {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 36px;
 }
 .home {
   padding: 20px;
@@ -315,18 +343,26 @@ body {
   align-items: center;
 }
 .home-images {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
   padding: 20px;
-  margin: 15px;
-  margin-left: 50PX;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.home2 {
+  flex: 3;
+}
+.home1 {
+  flex: 2;
 }
 .pra {
-  color: #4a4c70;
+  font-size: 35px;
   font-weight: bold;
+  margin-bottom: 20px;
+   font-family: "Permanent Marker", cursive;
 }
-.pra-text {
-  font-weight: 300;
-  color: black ;
-}
+
 .about-avatar {
   display: flex;
   justify-content: space-between;
@@ -341,9 +377,12 @@ body {
   gap: 20px;
 }
 .aboutus h1 {
-  font-weight: bold;
-  font-size: 60px;
+  font-family: "Courgette", cursive;
+  font-weight: 600;
+  font-style:normal;
+  font-size: 70px;
   padding: 20px;
+  color: white;
 }
 .aboutus h2 {
   font-weight:500;
@@ -389,9 +428,11 @@ body {
   align-items: center;
   text-align: center;
   margin: 15px;
+  margin-top: 30px;
   padding: 20px;
   width: 95%;
   min-height: 90vh;
+  
 }
 .aboutus .cards {
   display: flex;
@@ -582,17 +623,28 @@ body {
 }
 .gallery {
   display: flex;
-  justify-content:flex-start;
+  justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 10px;
-  height: 100vh;
-  margin: 0;
-  background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,.5)),url('/images/logo.jpg');;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: url("/images/contacts.jpg");
+  width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  position: relative;
+  z-index: 1000;
 }
-.gallery .welcome {
-  margin-top: 50px;
+.gallery-images {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  margin-top: 100px;
 }
+
 .images{
   display: grid;
   justify-content: center;
@@ -601,12 +653,54 @@ body {
   background-color: lightslategray;
   grid-template-columns: repeat(3, 1fr);
 }
+.gallery-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.side {
+  display: flex;
+  gap: 100px;
+  height: fit-content;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+.side1 {
+  flex: 3;
+}
+.side1 h1 {
+ font-family: "Permanent Marker", cursive;
+  font-weight: 600;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 10px;
+}
+.lives {
+  flex: 2;
+  line-height: 1.2;
+  font-family: "Dancing Script";
+  font-optical-sizing: auto;
+  font-size: 80px;
+  justify-content: flex-start;
+}
 
 
 
 
 
 @media (max-width: 991px) {
+  .side {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .gallery-images{
+    grid-template-columns: repeat(2,1fr);
+  }
+  .lives {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   .images {
     display: grid;
     grid-template-columns: 1fr;
@@ -657,8 +751,9 @@ body {
     justify-content: center;
   }
   .about-avatar {
-    grid-template-columns: 1fr;
-    gap: 5px;
+    display: grid;
+    grid-template-columns:repeat(2, 1fr);
+    gap: 20px;
     align-items: center;
   }
   .about-head {
@@ -670,6 +765,7 @@ body {
     justify-content: center;
     margin: 20px auto;
     text-align: center;
+    margin-top: 130px;
   }
   .about-head .card {
     width: 100%;
@@ -679,14 +775,24 @@ body {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    justify-content: center;
+  }
+  .lives p{
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-size: 30px;
+  }
+  .homepage {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: cover;
   }
   .about-c1{
     display: flex;
     flex-direction: column;
     gap: 5px;
     justify-content: center;
-    
+    align-items: flex-start;
   }
   .donate-btn {
     display:inline-block;

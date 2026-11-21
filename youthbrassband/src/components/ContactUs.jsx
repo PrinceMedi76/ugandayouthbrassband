@@ -32,9 +32,9 @@ const ContactUs = () => {
     <Navbar/>
      <section className="aboutus">
       <div className="container">
-        <h1 className="com">Let's talk</h1>
-        <h2>Connect With Us <span className="text-red-300">Lets Make <br/>a Change</span></h2>
-        <h3>Reach out to us through any of our channel. We're always here to<br/>
+        <h1 className="">Let's talk</h1>
+        <h2 className="text-white">Connect With Us <span className="text-red-300">Lets Make <br/>a Change</span></h2>
+        <h3 className="text-white">Reach out to us through any of our channel. We're always here to<br/>
         answer your questions, hear your ideas, and work together to <br/>
         change childrens lives and skills through your <span className="text-red-500 font-semibold">Donate ❤️</span></h3>
           <div className="cards">
@@ -86,7 +86,7 @@ const ContactUs = () => {
             <p className="font-light text-xs">@ugandayouthbrassband</p>
           </div>
         </div>
-        <div>
+        <div className="feedback">
           <section className="aboutus-feedback">
             <div className="container">
               <h className='font-bold text-black text-2xl'>Contact Us</h>

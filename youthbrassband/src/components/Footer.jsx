@@ -13,7 +13,7 @@ const Footer = () => {
         initial={{opacity:0, y:50}}
         whileInView={{opacity:1, y:0}}
         transition={{duration:0.6}}>
-        <footer className='container footer max-h-full max-w-full justify-between bg-gray-800 p-10'>
+        <footer className='container footer max-h-full max-w-full justify-between bg-[#066277] p-10'>
         <div className='container-fluid flex  col-12 col-lg-4'>
             <div className='row gap-2 col-12 col-lg-4'>
                 <div className='footer-card relative col-12 col-lg-4' style={{maxWidth: "320px"}}>
@@ -47,16 +47,16 @@ const Footer = () => {
                     <div class="card-body">
                         <h4 class="card-title">CONTACTS</h4>
                         <p class="card-text">P.O. BOX 214788 Kampala - Uganda</p>
-                        <p class="card-subtitle fg-3">Phone : <br/> +256 788446462 / +256 744999159</p>
+                        <p class="card-subtitle text-black fg-3">Phone : <br/> +256 788446462 / +256 744999159</p>
                         <p class="card-text">Email : <br/> ugandayouthbrassband@gmail.com</p>
-                        <p class="card-subtitle fg-3">Location : <br/> Maganjo, Namalere Village, Wakiso District.</p>
+                        <p class="card-subtitle text-black fg-3">Location : <br/> Maganjo, Namalere Village, Wakiso District.</p>
                     </div>
                 </div>
                 <div class="footer-card col-12 col-lg-4" style={{maxWidth: "320px"}}>
                     <div class="card-body">
                         <h4 class="card-title">PARTNERS</h4>
                         <img class='card-p-logo' src='./images/Sounds.jpg' alt='...'/>
-                        <p class="card-subtitle fg-3">Sounds Of Brass Radio<br/>UK - SME Awards Winner 2026</p>
+                        <p class="card-subtitle text-black fg-3">Sounds Of Brass Radio<br/>UK - SME Awards Winner 2026</p>
                         <a href="http://www.sounds-of-brass.co.uk/">Partner Website</a>
                         <button type="button" class="btn"><a href="https://www.sounds-of-brass.co.uk/african-youth-band-partner">Donate ❤️</a></button>
                     </div>
@@ -64,7 +64,7 @@ const Footer = () => {
                 <div class="footer-card col-12 col-lg-4" style={{maxWidth: "200px"}}>
                     <div class="card-body">
                         <h4 class="card-title">Donate</h4>
-                        <p class=" fg-3">
+                        <p class="text-black  fg-3">
                             Donate Instruments, Mouthpieces, School Fees, <br/> Rehearsal space and Transport
                         </p>
                         <p class="card-subtitle fg-success">

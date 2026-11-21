@@ -22,7 +22,7 @@ const About = () => {
                 <div className="card">
                     <div className="card-body">
                         <div className="card-title text-center fw-bold">
-                            <h5>Uganda Youth Brass Band</h5>
+                            <h className='text-2xl font-bold font-Quicksand'>Uganda Youth Brass Band</h>
                         </div>
                         <div className="card-text text-center">
                             <p>
@@ -73,12 +73,12 @@ const About = () => {
       whileInView={{opacity:1, y:0}}
       transition={{duration:0.6}}>
                 <div className='container'>
-                <div className='about-c1 gap-50'>
+                <div className='about-c1'>
                     <div className='card'>
-                        <img src="/images/newlogo.png" class="img-fluid w-80 h-60" alt="..."></img>
+                        <img src="/images/newlogo.png" class="img-fluid w-90 h-50" alt="..."></img>
                     </div>
                     <div className='about-card'>
-                        <p className='card-subtittle w-90 text-3xl flex center  tracking-wide font-stretch-50%'>
+                        <p className='card-subtittle w-90  text-3xl flex space-around  tracking-wide font-stretch-50%'>
                             Uganda Youth Brass Band we teach children in schools across Wakiso District
                             how to play
                             trumpets, trombones, drums and Music reading. We provide trainers, instruments and training ground.

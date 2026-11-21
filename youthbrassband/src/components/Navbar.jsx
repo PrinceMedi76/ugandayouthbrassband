@@ -46,7 +46,11 @@ const Navbar = () => {
             <ul className="dropdown-menu">
               <Link to=''><li><a href="">Media</a></li></Link>
               <Link to=''><li><a href=""></a>Reels</li></Link>
-              <Link to='gallery'><li><a href="#">Gallery</a></li></Link>
+              <Link to='/gallery'>
+                <li>
+                  <a href="">Gallery</a>
+                </li>
+              </Link>
             </ul>
           </li>
            <li class="nav-item hover-lift">
