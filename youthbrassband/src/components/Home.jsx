@@ -2,7 +2,7 @@ import {motion } from "motion/react"
 
 const Home = () => {
   return (
-      <div className="home">
+      <div className="home text-white">
           <motion.div 
             initial={{opacity:0, y:90}}
             whileInView={{opacity:1, y:0}}

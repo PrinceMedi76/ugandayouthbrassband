@@ -11,7 +11,8 @@ const Gallery = () => {
     {id:6, src: "/images/paradekids.jpeg", title: "Photo 6"},
     {id:7, src: "/images/img3.jpg", title: "Photo 7"},
     {id:8, src: "/images/img5.jpg", title: "Photo 8"},
-    {id:8, src: "/images/img6.JPG", title: "Photo 9"}
+    {id:9, src: "/images/img6.JPG", title: "Photo 9"},
+    {id:10, src: "/images/white2.jpeg", title: "Photo 10"}
   ]
 
   return (

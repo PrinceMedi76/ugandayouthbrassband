@@ -69,26 +69,47 @@ const About = () => {
     <div>
         <section>
             <motion.div
-            initial={{opacity:0, y:50}}
-      whileInView={{opacity:1, y:0}}
-      transition={{duration:0.6}}>
+            initial={{opacity:0, x:70}}
+      whileInView={{opacity:1, x:0}}
+      transition={{duration:0.4}}>
                 <div className='container'>
                 <div className='about-c1'>
-                    <div className='card'>
-                        <img src="/images/newlogo.png" class="img-fluid w-90 h-50" alt="..."></img>
-                    </div>
                     <div className='about-card'>
-                        <p className='card-subtittle w-90  text-3xl flex space-around  tracking-wide font-stretch-50%'>
+                        <p className='card-subtittle text-start  text-2xl font-normal leading-12 text-white'>
                             Uganda Youth Brass Band we teach children in schools across Wakiso District
                             how to play
                             trumpets, trombones, drums and Music reading. We provide trainers, instruments and training ground.
                         </p>
+                    </div>
+                    <div className='card flex-2 bg-transparent'>
+                        <img src="/images/newlogo.png" class="img-fluid w-80 h-80" alt="..."></img>
                     </div>
                 </div>
             </div>
             </motion.div>
         </section>
     </div>
+    <motion.div
+    initial={{opacity:0, x:70}}
+      whileInView={{opacity:1, x:0}}
+      transition={{duration:0.4}}>
+        <section className="partners">
+            <div className="part flex justify-between align-baseline gap-30">
+                <div className="">
+                    <img src="/images/denni&white.jpeg" alt="..." className="w-80 h-70" />
+                </div>
+                <div className=" text-2xl flex-2 font-normal text-white">
+                    <h1>Mr. Dennis Wasswa & Ms Sara Gmeinwieser</h1>
+                    <p className="leading-12">We are deeply grateful to Ms. Sarah Gmeinwieser from Germany
+                        for continuous support.
+                    </p><br/>
+                    <p className="leading-12">She came all the way from Germany and volunteered with us,
+                        conducting a master class with Uganda youth children at Namalere.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </motion.div>
     <section>
         <motion.div
         initial={{opacity:0, y:50}}
