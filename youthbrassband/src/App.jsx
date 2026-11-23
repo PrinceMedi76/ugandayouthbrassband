@@ -7,6 +7,7 @@ import Home from './components/Home'
 import ContactUs from './components/ContactUs'
 import NewStories from './components/NewStories'
 import Gallery from './components/Gallery'
+import AboutD from './components/AboutD'
 
 function App() {
   
@@ -24,6 +25,7 @@ function App() {
         <Route path='/contactus' element={<ContactUs />} />
         <Route path='/newstories' element={<NewStories />} />
         <Route path='/gallery' element={<Gallery />} />
+        <Route path='/aboutd' element={<AboutD />} />
       </Routes>
       <Footer />
     </>

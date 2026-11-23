@@ -11,8 +11,16 @@ const Donate = () => {
         <Navbar />
          <section className='container welcome'>
             <h1 className="welcome-h3"><span className="welcome-span">Welcome to</span> Uganda</h1>
-            <h3 className="welcome-h3">Youth Brass Band</h3>
+            <h1 className="welcome-h2">Youth Brass Band</h1>
           </section>
+          <div className='home-btns'>
+            <div className='btns'>
+              <button type="button" className='home-btn' id="btn-donate">Donate 🤍</button>
+            </div>
+            <div className='btns'>
+              <button type="button" className='home-btn' id="btn-involve">Get Involved</button>
+            </div>
+          </div>
       </div>
     </motion.div>
   )

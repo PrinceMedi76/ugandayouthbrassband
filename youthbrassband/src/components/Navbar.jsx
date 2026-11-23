@@ -5,7 +5,7 @@ const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
   useEffect(()=> {
     const handleScroll = () => {
-      setScrolled(window.scrollY > 50);
+      setScrolled(window.scrollY > 5);
     }
     window.addEventListener('scroll', handleScroll);
 
@@ -30,16 +30,26 @@ const Navbar = () => {
         <button type="button" class="btn2 btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
       </div>
       <div class="drawer-body d-flex flex-row-reverse">
-        <ul class={`navbar-nav fs-lg gap-10 text-amber-50 ${scrolled?"text-black font-semibold":"text-white"}`}>
+        <ul class={`navbar-nav fs-lg gap-6 text-amber-50 ${scrolled?"text-black font-semibold":"text-white"}`}>
           <li class="nav-item hover-lift">
             <Link to='/'>
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </Link>
           </li>
-          <li class="nav-item hover-lift">
-            <Link to='/about'>
-              <a class="nav-link" href="#">About</a>
-            </Link>
+          <li class="nav-item hover-lift dropdown">
+              <a class="nav-link" href="#">About Us</a>
+              <ul className="dropdown-menu text-start">
+              <Link to='/about'>
+                <li>
+                  <a href="">About Us</a>
+                </li>
+              </Link>
+              <Link to='/aboutd'>
+                <li>
+                  <a href="">About Director</a>
+                </li>
+              </Link>
+            </ul>
           </li>
           <li class="nav-item hover-lift dropdown">
             <a class="nav-link" href="#">Media & Press</a>
@@ -58,9 +68,24 @@ const Navbar = () => {
               <a class="nav-link" href="#">News & Stories</a>
             </Link>
           </li>
-           <li class="nav-item hover-lift">
-            <Link to=''>
+           <li class="nav-item hover-lift dropdown">
               <a class="nav-link" href="#">Get Involved</a>
+              <ul className="dropdown-menu text-start">
+              <Link to=''>
+                <li className="text-lg ">
+                  <a href="">Volunteer With Us</a>
+                </li>
+              </Link>
+              <Link to=''>
+                <li>
+                  <a href="">Join Us</a>
+                </li>
+              </Link>
+            </ul>
+          </li>
+          <li class="nav-item hover-lift">
+            <Link to=''>
+              <a class="nav-link" href="#">Support Us</a>
             </Link>
           </li>
           <li class="nav-item hover-lift">
