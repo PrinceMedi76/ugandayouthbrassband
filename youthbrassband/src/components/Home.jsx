@@ -89,6 +89,17 @@ const Home = () => {
           </div>
         </div>
       </motion.div>
+      <motion.div>
+        <section>
+          <div>
+            <h5>What we do</h5>
+            <h2>Uganda Youth Brass Band Projects</h2>
+            <p>At UYBB, we're committed to creating lasting change in communities through targeted
+              programs that address critical needs. Our initiatives focus on providing
+               immediate relief while building foundations for sustainable development.</p>
+          </div>
+        </section>
+      </motion.div>
     </div>
   )
 }

@@ -84,7 +84,7 @@ const Navbar = () => {
             </ul>
           </li>
           <li class="nav-item hover-lift">
-            <Link to=''>
+            <Link to='/supportus'>
               <a class="nav-link" href="#">Support Us</a>
             </Link>
           </li>

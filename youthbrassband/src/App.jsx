@@ -8,6 +8,7 @@ import ContactUs from './components/ContactUs'
 import NewStories from './components/NewStories'
 import Gallery from './components/Gallery'
 import AboutD from './components/AboutD'
+import SupportUs from './components/SupportUs'
 
 function App() {
   
@@ -26,6 +27,7 @@ function App() {
         <Route path='/newstories' element={<NewStories />} />
         <Route path='/gallery' element={<Gallery />} />
         <Route path='/aboutd' element={<AboutD />} />
+        <Route path='/supportus' element={<SupportUs />} />
       </Routes>
       <Footer />
     </>
